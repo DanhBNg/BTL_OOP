@@ -82,9 +82,9 @@ void NhapTT1KH(KhachHang& KH, int& pb){
 	SET_COLOR(10); cout << "\nMa Khach Hang: "; SET_COLOR(7); cin >> KH.MaKhachHang; 
  	cin.ignore(); 
  	SET_COLOR(10); cout << "\nTen Khach Hang: "; SET_COLOR(7); 
-	getline(cin, KH.TenKhachHang); 
- 	SET_COLOR(10); cout << "\nSo Dien Thoai: "; SET_COLOR(7); cin >> KH.SoDienThoai; 
-	if (nornc == 1){ 
+	getline(cin, KH.getTenKhachHang()); 
+ 	SET_COLOR(10); cout << "\nSo Dien Thoai: "; SET_COLOR(7); cin >> KH.getSoDienThoai(); 
+	if (pb == 1){ 
  		SET_COLOR(10); cout << "\nDiem tich luy: "; SET_COLOR(7); 
 		cin >> KH.DiemTichLuy; cin.ignore(); 
  	} 
